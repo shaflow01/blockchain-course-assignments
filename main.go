@@ -59,7 +59,7 @@ func main() {
 func NewNode(statedb *trie.State, txpool *txpool.DefaultPool) *node {
 	return &node{
 		blockchain.NewBlockchain(statedb, txpool),
-		"0xbE4bf446e2Bdd6ebaD529A4df21911c87E48E535",
+		"0x6c8E523FC59529765Ea6A3Bf0cC18AFFc171e484",
 	}
 }
 
@@ -202,7 +202,7 @@ func (n *node) createBlock() {
 	fmt.Println("start make block...")
 	machine := statemachine.NewStateMachine()
 	blockMaker := maker.NewBlockMaker(n.blockchain.Statedb, machine, n.blockchain)
-	address := "0xbE4bf446e2Bdd6ebaD529A4df21911c87E48E535"
+	address := "0x6c8E523FC59529765Ea6A3Bf0cC18AFFc171e484"
 	add, _ := hexutil.Decode(address)
 	var addr types.Address
 	copy(addr[:], add[:20])
