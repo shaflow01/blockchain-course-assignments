@@ -1,4 +1,3 @@
-"# blockchain-course-assignments" 
 # 区块链产业学院区块链技术与开发小组作业  
 
 ## 运行
